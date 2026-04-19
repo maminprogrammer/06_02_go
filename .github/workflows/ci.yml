@@ -22,8 +22,7 @@ jobs:
         run: go mod download
       
       - name: Build Binary
-        run: |
-          go build -o dummy-server.bin main.go
+        run: go build -o dummy-server.bin .
       
       - name: Simple Test
         run: |
